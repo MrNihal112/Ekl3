@@ -90,7 +90,7 @@ async def start(lel, message):
    user_name = '@' + message.from_user.username if message.from_user.username else None
    await add_user(id, user_name)
    but = InlineKeyboardMarkup([[InlineKeyboardButton("giriş Yapın ✅", callback_data="Login"), InlineKeyboardButton("Group Ekle 💯", callback_data="Adding") ],[InlineKeyboardButton("Telefon Ekle ⚙️", callback_data="Edit"), InlineKeyboardButton("Telefonlar 💕", callback_data="Ish")],[InlineKeyboardButton("Telefon Kaldır ⚙️", callback_data="Remove"), InlineKeyboardButton("Yönetim paneli", callback_data="Admin")]])
-   await message.reply_text(f"**Merhaba** `{message.from_user.first_name}` **!\n\nBen Boss Bot üye çekimi için tasarlanmış botum. \nÜcretli veya Ücretsiz üye çekmek için tasarlandım,\nSizler için en iyisi.\n\n💬 Sohbet Grubu @adderuser**", reply_markup=but)
+   await message.reply_text(f"**Merhaba** `{message.from_user.first_name}` **!\n\nBen  üye çekimi için tasarlanmış botum. \nÜcretli veya Ücretsiz üye çekmek için tasarlandım,\nSizler için en iyisi.\n\n💬 Sohbet Grubu @adderuser**", reply_markup=but)
 
 
 
@@ -429,7 +429,7 @@ async def subscribers_count(lel, message):
       return
    if message.from_user.id in OWNER:
       but = InlineKeyboardMarkup([[InlineKeyboardButton("Kullanıcı ✅", callback_data="Users")], [InlineKeyboardButton("Reklam gönder 💯", callback_data="Broadcast")],[InlineKeyboardButton("Kullanıcı Ekle", callback_data="New")], [InlineKeyboardButton("Kullanıcıları Kontrol Et", callback_data="Check")]])
-      await app.send_message(chat_id=message.chat.id,text=f"**Selam** `{message.from_user.first_name}` **!\n\nBoss üye Bot İLE TEKNOLOJİNİN Yönetici Paneline Hoş Geldiniz\n\nİletişim ❤️ By @slmBATU**", reply_markup=but)
+      await app.send_message(chat_id=message.chat.id,text=f"**Selam** `{message.from_user.first_name}` **!\n\nÜye ekleme Bot İLE TEKNOLOJİNİN Yönetici Paneline Hoş Geldiniz\n\nİletişim ❤️ By @slmBATU**", reply_markup=but)
    else:
       await app.send_message(chat_id=message.chat.id,text="**Bot'un sahibi değilsiniz\n\nBotun Sahibi 🇹🇷 By @slmBATU**")
 
