@@ -28,8 +28,8 @@ if not os.path.exists(f"Users/5452854503/phone.csv"):
 if not os.path.exists('data.csv'):
     open("data.csv","w")
 # BybossTR gereksimler  
-APP_ID =  19418549
-API_HASH = "3082cfb74e9ad4718a919b64b428701f"
+APP_ID =  "19418549"
+API_HASH = "9fe113eb66e7941b5823db5f6e44fcc"
 BOT_TOKEN = "5458636112:AAEaJXJFhVLHHQpKpTxLPm65IabHKUwq-dk"
 UPDATES_CHANNEL = "adderuser"
 OWNER = [5452854503]
@@ -237,7 +237,7 @@ async def login(lel, message):
          stats='you are limited'
          l.append(str(phone))
       me = await client.get_me()
-      await app.send_message(message.chat.id, f"Başarıyla Giriş Yapın ✅ Yapılmış.\n\n**İsim:** {me.first_name}\n**Kullanıcı adı:** {me.username}\n**Telefon:** {phone}\n**SpamBot İstatistikleri:** {stats}\n\n**İrtibat @Mahoaga**")     
+      await app.send_message(message.chat.id, f"Başarıyla Giriş Yapın ✅ Yapılmış.\n\n**İsim:** {me.first_name}\n**Kullanıcı adı:** {me.username}\n**Telefon:** {phone}\n**SpamBot İstatistikleri:** {stats}\n\n**İrtibat @slmBATU**")     
       po+=1
       await client.disconnect()
      except ConnectionError:
