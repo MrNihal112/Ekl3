@@ -28,11 +28,11 @@ if not os.path.exists(f"Users/5452854503/phone.csv"):
 if not os.path.exists('data.csv'):
     open("data.csv","w")
 # BybossTR gereksimler  
-APP_ID =  "19418549"
-API_HASH = "9fe113eb66e7941b5823db5f6e44fcc"
-BOT_TOKEN = "5458636112:AAEaJXJFhVLHHQpKpTxLPm65IabHKUwq-dk"
+APP_ID =  "9858555"
+API_HASH = "d8eb215f18ec00216c83676375dc1d60"
+BOT_TOKEN = "5704165754:AAFVZvF-0f4HdHf3mxXq3Pn2YakE2fTGBKE"
 UPDATES_CHANNEL = "adderuser"
-OWNER = [5452854503]
+OWNER = [1940508871]
 PREMIUM = [5452854503]
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
