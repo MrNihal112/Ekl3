@@ -205,7 +205,7 @@ async def login(lel, message):
             try:
                await client.sign_in(password=two_step_code.text)
             except Exception as e:
-               await message.reply(f"**ERROR:** `{str(e)}`")
+               await message.reply(message.chat.id ,f"ERROR: {str(e)}")
                return
             except Exception as e:
                await app.send_message(message.chat.id ,f"**ERROR:** `{str(e)}`")
